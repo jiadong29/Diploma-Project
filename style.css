@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f0f0f0, #c9d6ff);
+    color: #333;
+}
+
+.container {
+    margin: 0 15px; 
+} 
+
+/* Shared form styles */
+.form-box{
+    width: 100%;
+    max-width: 450px; 
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+    display: none; /* Initially hidden */
+}
+
+.form-box.active{
+    display: block; /* Show when active */
+}
+    
+/* Login Form Title */
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Login Form-Password box */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 30px; /* Rounded corners for input fields */
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px; /* Space between input fields */
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #6c63ff; /* Purple background */
+    border-radius: 30px; /* Rounded corners for button */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px; /* Space above the button */
+    transition: 0.5s;
+}
+
+button:hover{
+    background: #5a54e0; /* Darker purple on hover */
+}
+
+/* Login Form-Don't have an account? */
+p{
+    font-size: 16px;
+    text-align: center; 
+    margin-bottom: 10px; /* Space above the paragraph */
+}
+
+/* Login Form-Register */
+p a{
+    color: #6c63ff; /* Purple link color */
+    text-decoration: none;
+}
+
+p a:hover{
+    text-decoration: underline; /* Underline on hover */
+}
+
+.error-message {
+    padding: 12px;
+    background: #f8d7da; /* Light red background for error */
+    border-radius: 30px; /* Rounded corners for error message */
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px; /* Space below the error message */
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #6c63ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.forgot-link:hover {
+    text-decoration: underline;
+}
